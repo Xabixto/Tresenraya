@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+ol,
+ul {
+    list-style: none;
+}
+
+.container-raya{
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+}
+
+.juego, .juego-info{
+    text-align: center; 
+    padding-top: 15px;
+}
+.jugadores{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.tablero-grid{
+   
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    position:relative; 
+}
+
+.button{
+    width: 8rem;
+    height: 8rem;
+    border: 1px solid rgb(249, 249, 249);
+    background-color: #0559f9;
+    transition: background-color ease-in 0.25s;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  li{
+    text-align: center;
+  }
+  .strike {
+    position: absolute;
+    background-color: rgb(236, 16, 16);
+  }
+  .strike-fila-1 {
+    width: 100%;
+    height: 4px;
+    top: 15%;
+  }
+  .strike-fila-2 {
+    width: 100%;
+    height: 4px;
+    top: 48%;
+  }
+  .strike-fila-3 {
+    width: 100%;
+    height: 4px;
+    top: 83%;
+  }
+  .strike-columna-1 {
+    height: 100%;
+    width: 4px;
+    left: 15%;
+  }
+  .strike-columna-2 {
+    height: 100%;
+    width: 4px;
+    left: 48%;
+  }
+  .strike-columna-3 {
+    height: 100%;
+    width: 4px;
+    left: 83%;
+  }
+  .strike-diagonal-1 {
+    width: 90%;
+    height: 4px;
+    top: 50%;
+    left: 5%;
+    transform: skewY(45deg);
+  }
+  .strike-diagonal-2 {
+    width: 90%;
+    height: 4px;
+    top: 50%;
+    left: 5%;
+    transform: skewY(-45deg);
+  }
+
+.tablero-grid .button:hover,
+.tablero-grid .button:focus {
+   background-color:rgba(170, 170, 170, 0.8);
+    
+}
+.botones{
+  display: flex;
+  width: 30rem;
+  justify-content: space-between;
+}
+
+.juegoBoton{
+   
+    padding: 1rem 1rem;
+    background:rgb(22, 248, 60) ;
+    cursor: pointer;
+    justify-content: center;
+    font-weight: bold;
+    transition:color ease-out 0.3s;
+   
+}
+
+.juegoBoton:hover{
+  
+    background:rgb(204, 223, 40) ;
+    border: 1px solid rgb(230, 243, 201);
+   
+}
+
+
+.juegoAgain{
+   
+  padding: 1rem 1rem;
+  background:rgb(231, 54, 23) ;
+  cursor: pointer;
+  justify-content: center;
+  font-weight: bold;
+  transition:color ease-out 0.3s;
+ 
+}
+
+.juegoAgain:hover{
+
+  background:rgb(196, 216, 11) ;
+  border: 1px solid rgb(230, 243, 201);
+ 
+}

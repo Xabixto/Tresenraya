@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="py-raya.css">
+    <title>Tres en raya</title>
+
+</head>
+
+<body>
+    <div class="container-raya">
+        <h2>TRES EN RAYA</h2>
+        <div class="juego"></div>
+        <div class="jugadores" id="jugadores">
+            <div class="player_chica" id="turno1">
+                <h1>Jugador 1: X</h1>
+                <img src="images/jugadora1.png" alt="jugador1">
+            </div>
+
+
+            <div class="tablero-main">
+                <ul class="tablero-grid">
+
+                    <li class="button" id="b1" data-position="1"></li>
+                    <li class="button" id="b2" data-position="2"></li>
+                    <li class="button" id="b3" data-position="3"></li>
+                    <li class="button" id="b4" data-position="4"></li>
+                    <li class="button" id="b5" data-position="5"></li>
+                    <li class="button" id="b6" data-position="6"></li>
+                    <li class="button" id="b7" data-position="7"></li>
+                    <li class="button" id="b8" data-position="8"></li>
+                    <li class="button" id="b9" data-position="9"></li>
+
+                </ul>
+
+                <div id="strike" class="strike"></div>
+
+            </div>
+
+            <div class="player_chico" id="turno2">
+                <h1>Jugador 2: Y</h1>
+                <img src="images/jugador2.png" alt="jugador2">
+            </div>
+        </div>
+        <p id="juego-info" class="juego-info"></p>
+        <div class="botones">
+
+            <div id="juegoBoton" class="juegoBoton">Jugar</div>
+
+            <div id="juegoAgain" class="juegoAgain">Jugar otra vez</div>
+
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="py-raya.js"></script>
+</body>
+
+</html>
